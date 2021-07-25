@@ -1,0 +1,355 @@
+/*--объявление глоб.переменных--*/
+:root {
+  --clr-ttl: #212121; /*--осн.цвет заголовков--*/
+  --clr-txt: #757575; /*--осн.цвет текста--*/
+  --clr-backg-hero: #2f303a; /*--цвет фона героя и футера--*/
+  --clr-backg-item: #f5f4fa; /*--доп.цвет фона элементов--*/
+  --clr-btn-link: #ffffff; /*--цвет текста акт.кн.,ссылок..--*/
+  --clr-brend: #2196f3; /*-цвет логотипа,акт.кнопок и ссылок---*/
+  --clr-logo-part: #000000; /*-цвет логотипа,акт.кнопок и ссылок---*/
+  --clr-ft-link: rgba(255, 255, 255, 0.6); /*--цвет ссылок в футере--*/
+}
+
+/*--Установки "по умолчанию" для сайта--*/
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--clr-txt);
+  background-color: var(--clr-btn-link);
+  cursor: default;
+}
+
+/*--Установки элементов--*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav-link.current {
+  color: var(--clr-brend);
+}
+/*---header--*/
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+/*--Логотип--*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--clr-brend);
+  letter-spacing: 0.03em;
+}
+.logo-part {
+  color: var(--clr-logo-part);
+}
+
+.footer-section .logo-part {
+  color: var(--clr-btn-link);
+}
+
+.nav-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--clr-ttl);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--clr-brend);
+}
+
+.nav-link-mailto,
+.nav-link-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--clr-txt);
+}
+.nav-link-mailto:hover,
+.nav-link-mailto:focus,
+.nav-link-phone:hover,
+.nav-link-phone:focus {
+  color: var(--clr-brend);
+}
+
+/*--main-section--*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 1px solid red;
+}
+
+.container.no-padd {
+  padding: 0;
+  outline: red;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid green;
+}
+.page-header > .container {
+  display: flex;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  display: flex;
+  background-color: yellow;
+  align-items: center;
+}
+
+.box-1 {
+  margin-left: auto;
+}
+
+.box-2 {
+  display: inline-block;
+}
+
+.main-section {
+  background: var(--clr-backg-hero);
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--clr-btn-link);
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-bottom: 200px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
+}
+
+.advants-title {
+  display: none;
+}
+.advants-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+}
+
+.advants-list > .advants-item {
+  flex-basis: calc(100% / 4 - 15px);
+  margin-left: 15px;
+}
+.advants-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--clr-ttl);
+  margin-bottom: 10px;
+}
+.advants-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
+}
+
+/*--direct-section--*/
+.direct-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--clr-ttl);
+  margin-bottom: 50px;
+}
+.direct-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+/*--card-section--*/
+.card-section {
+  background: var(--clr-backg-item);
+  text-align: center;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--clr-ttl);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card-item {
+  width: 270px;
+  height: 368px;
+  text-align: center;
+}
+
+.card-img {
+  margin-bottom: 30px;
+}
+.card-item-title {
+  font-weight: 500;
+  color: var(--clr-ttl);
+  margin-bottom: 10px;
+}
+.card-text {
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
+  margin-bottom: 30px;
+}
+
+.card-content {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*-------------------footer-section-----------*/
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--clr-backg-hero);
+}
+.footer-section a.logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.addr {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-btn-link);
+  margin-bottom: 19px;
+}
+
+.addr-link-mailto,
+.addr-link-phone {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-ft-link);
+  padding: 0;
+  margin: 9px 0;
+}
+.addr-link-phone {
+  padding: 0;
+  margin: 0;
+}
+.addr-link-mailto:hover,
+.addr-link-mailto:focus,
+.addr-link-phone:hover,
+.addr-link-phone:focus {
+  color: var(--clr-brend);
+}
+
+/*------------PORTFOLIO---------*/
+
+.portfolio-title {
+  display: none;
+}
+.btn-item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--clr-backg-item);
+  color: var(--clr-ttl);
+  text-align: center;
+  cursor: pointer;
+}
+.btn-item:hover,
+.btn-item:focus {
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
+}
+
+.btn-item.current {
+  background-color: var(--clr-brend);
+}
+
+.sample-title {
+  display: none;
+}
+
+.sample-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.sample-item {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
+}
