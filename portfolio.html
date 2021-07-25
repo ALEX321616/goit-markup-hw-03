@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -21,187 +20,195 @@
 
   <body>
     <header class="page-header">
-      <div class="container no-padd">
+      <div class="container">
         <nav class="nav-main">
-          <div class="box-1">
-            <a class="logo link" href="#">Web<span class="logo-part">Studio</span> </a>
-            <ul class="nav-list list">
-              <div class="box-2">
-                <li class="nav-item">
-                  <a class="nav-link link current" href="./index.html">Студия</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link curren" href="#">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link" href="#">Контакты</a>
-                </li>
-              </div>
-            </ul>
-          </div>
+          <a class="logo link" href="#">Web<span class="logo-part">Studio</span> </a>
+
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link current" href="#">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
 
-        <div class="box-3">
-          <ul class="nav-contact list">
-            <div class="box-4">
-              <li class="nav-contact-mailto">
-                <a class="nav-link-mailto link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </div>
-            <div class="box-5">
-              <li class="nav-contact-phone">
-                <a class="nav-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </div>
-          </ul>
-        </div>
+        <ul class="nav-contact list">
+          <li class="nav-contact-mailto">
+            <a class="nav-link-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+
+          <li class="nav-contact-phone">
+            <a class="nav-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <!--Герой-->
     <main>
-      <section class="portfolio-section">
-        <h1 class="portfolio-title">Портфолио</h1>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
 
-        <!--Фильтр по разделам-->
-        <ul class="btn-select list">
-          <li><button class="btn-item current" type="button">Все</button></li>
-          <li><button class="btn-item" type="button">Веб-сайты</button></li>
-          <li><button class="btn-item" type="button">Приложения</button></li>
-          <li><button class="btn-item" type="button">Дизайн</button></li>
-          <li><button class="btn-item" type="button">Маркетинг</button></li>
-        </ul>
+          <!--Фильтр по разделам-->
+          <ul class="btn-select list">
+            <li><button class="btn-item current" type="button">Все</button></li>
+            <li><button class="btn-item" type="button">Веб-сайты</button></li>
+            <li><button class="btn-item" type="button">Приложения</button></li>
+            <li><button class="btn-item" type="button">Дизайн</button></li>
+            <li><button class="btn-item" type="button">Маркетинг</button></li>
+          </ul>
 
-        <!--Список работ-->
-
-        <h2 class="sample-title">Примеры работ</h2>
-        <ul class="sample-list list">
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-1.jpg"
-                alt="Первый проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Технокряк</h3>
-              <p class="sample-item">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-2.jpg"
-                alt="Второй проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Постер New Orlean vs Golden Star</h3>
-              <p class="sample-item">Дизайн</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-3.jpg"
-                alt="Третий проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Ресторан Seafood</h3>
-              <p class="sample-item">Приложение</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-4.jpg"
-                alt="Четвертый проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Проект Prime</h3>
-              <p class="sample-item">Маркетинг</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-5.jpg"
-                alt="Пятый проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Проект Boxes</h3>
-              <p class="sample-item">Приложение</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-6.jpg"
-                alt="Шестой  проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Inspiration has no Borders</h3>
-              <p class="sample-item">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-7.jpg"
-                alt="Седьмой проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Издание Limited Edition</h3>
-              <p class="sample-item">Дизайн</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-8.jpg"
-                alt="Восьмой проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Проект LAB</h3>
-              <p class="sample-item">Маркетинг</p>
-            </a>
-          </li>
-          <li class="sample-item">
-            <a class="sample-link link" href="#">
-              <img
-                class="sample-img"
-                src="./images/project-9.jpg"
-                alt="Девятый проект"
-                width="393"
-                height="294"
-              />
-              <h3 class="sample-item-title">Growing Business</h3>
-              <p class="sample-item">Приложение</p>
-            </a>
-          </li>
-        </ul>
+          <h2 class="visually-hidden">Примеры работ</h2>
+          <ul class="sample-list list">
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-1.jpg"
+                  alt="Первый проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Технокряк</h3>
+                  <p class="sample-item-txt">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-2.jpg"
+                  alt="Второй проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Постер New Orlean vs Golden Star</h3>
+                  <p class="sample-item-txt">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-3.jpg"
+                  alt="Третий проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Ресторан Seafood</h3>
+                  <p class="sample-item-txt">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-4.jpg"
+                  alt="Четвертый проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Проект Prime</h3>
+                  <p class="sample-item-txt">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-5.jpg"
+                  alt="Пятый проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Проект Boxes</h3>
+                  <p class="sample-item-txt">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-6.jpg"
+                  alt="Шестой  проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Inspiration has no Borders</h3>
+                  <p class="sample-item-txt">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-7.jpg"
+                  alt="Седьмой проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Издание Limited Edition</h3>
+                  <p class="sample-item-txt">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-8.jpg"
+                  alt="Восьмой проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Проект LAB</h3>
+                  <p class="sample-item-txt">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="sample-item">
+              <a class="sample-link link" href="#">
+                <img
+                  class="sample-img"
+                  src="./images/project-9.jpg"
+                  alt="Девятый проект"
+                  width="370"
+                  height="294"
+                />
+                <div class="sample-box">
+                  <h3 class="sample-item-title">Growing Business</h3>
+                  <p class="sample-item-txt">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!--Футер-->
-    <footer class="footer-section">
-      <div class="container no-padd">
+    <footer class="footer section">
+      <div class="container">
         <a class="logo link" href="#">Web<span class="logo-part">Studio</span> </a>
         <address class="addr">
           г. Киев, пр-т Леси Украинки, 26
